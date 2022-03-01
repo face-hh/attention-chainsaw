@@ -68,6 +68,7 @@ input[type=submit] {
 }
 
 .select-selected {
+    box-shadow: 0px 0px 15px #09ff00;
     background-color: #FFFFFF;
 }
 
@@ -89,9 +90,7 @@ input[type=submit] {
 
 .select-items div,
 .select-selected {
-    box-shadow: 0px 0px 15px #09ff00;
-
-    color: #ffffff;
+    color: #000000;
     padding: 8px 16px;
     border: 1px solid transparent;
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
@@ -101,7 +100,7 @@ input[type=submit] {
 
 .select-items {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     top: 100%;
     left: 0;
     right: 0;
