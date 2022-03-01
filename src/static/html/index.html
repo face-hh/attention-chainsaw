@@ -12,8 +12,7 @@
     <meta property="og:image" content='/src/assets/codestacker.png'>
     <meta property="og:url" content="https://CodeStacker.io">
     <meta property="og:title" content="CodeStacker">
-    <meta property="og:description"
-        content="CodeStacker is cool">
+    <meta property="og:description" content="CodeStacker is cool">
     <link rel=icon href="/src/assets/codestacker.png">
 
     <link rel="stylesheet" href="/src/static/css/main.css">
@@ -21,8 +20,54 @@
 </head>
 
 <body>
-    <div class='logo'><span>Code Stacker</span></div>
-    <span class='header'>Go fuck yourself</span>
+    <div class='container'>
+        <div class='logo'><span>Submit</span></div>
+    </div>
+    <div>
+        <span class='input-values'>License: </span>
+        <div class='custom-select' stroke-width="1.5px">
+            <select>
+                <option value="0">Select license:</option>
+                <option value="1">Microsoft Reciprocal License</option>
+                <option value="2">The Code Project Open License (CPOL)</option>
+                <option value="3">The Common Development and Distribution License (CDDL)</option>
+                <option value="4">The Microsoft Public License (Ms-PL)</option>
+                <option value="5">The Mozilla Public License 1.1 (MPL 1.1)</option>
+                <option value="6">The Common Public License Version 1.0 (CPL)</option>
+                <option value="7">The Eclipse Public License 1.0</option>
+                <option value="8">The MIT License</option>
+                <option value="9">The BSD License</option>
+                <option value="10">The Apache License, Version 2.0</option>
+                <option value="11">The Creative Commons Attribution-ShareAlike 2.5 License</option>
+                <option value="12">The zlib/libpng License</option>
+                <option value="13">A Public Domain dedication</option>
+                <option value="14">The Creative Commons Attribution 3.0 Unported License</option>
+                <option value="15">The Creative Commons Attribution-Share Alike 3.0 Unported License</option>
+                <option value="16">The Creative Commons Attribution-NoDerivatives 3.0 Unported</option>
+                <option value="17">The GNU Lesser General Public License (LGPLv3)</option>
+                <option value="18">The GNU General Public License (GPLv3)</option>
+            </select>
+            <script src='/src/static/js/selectHandler.js'></script>
+        </div>
+        <br>
+        <br>
+        <span class='input-values'>Product name: <input id="ProductName" maxlength="70" type="text" required=""><span>
+                <br>
+                <button id="submit">Submit</button>
+                <script>
+                    const btn = document.getElementById("submit");
+
+                    btn.onclick = () => {
+                        const pname = document.getElementById('ProductName').value;
+                        const select = document.getElementById('select').value;
+
+                        if (!pname) return alert('No name chosen.')
+                        if (!select) return alert('No license chosen.')
+
+                        alert('thanks!')
+                    }
+                </script>
+    </div>
 </body>
 
 </html>
