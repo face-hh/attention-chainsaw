@@ -26,7 +26,7 @@
     <div>
         <span class='input-values'>License: </span>
         <div class='custom-select' stroke-width="1.5px">
-            <select>
+            <select id='select'>
                 <option value="0">Select license:</option>
                 <option value="1">Microsoft Reciprocal License</option>
                 <option value="2">The Code Project Open License (CPOL)</option>
@@ -53,6 +53,7 @@
         <br>
         <span class='input-values'>Product name: <input id="ProductName" maxlength="70" type="text" required=""><span>
                 <br>
+                <br>
                 <button id="submit">Submit</button>
                 <script>
                     const btn = document.getElementById("submit");
@@ -61,8 +62,9 @@
                         const pname = document.getElementById('ProductName').value;
                         const select = document.getElementById('select').value;
 
+                        console.log(select)
                         if (!pname) return alert('No name chosen.')
-                        if (!select) return alert('No license chosen.')
+                        if (select === 0) return alert('No license chosen.')
 
                         alert('thanks!')
                     }

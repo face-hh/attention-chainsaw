@@ -107,6 +107,21 @@ input[type=submit] {
     z-index: 99;
 }
 
+#submit {
+    border: none;
+    background-color: #FFFFFF;
+    color: rgb(0, 0, 0);
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#submit:hover {
+    background-color: rgb(177, 177, 177);
+}
+
 .select-hide {
     display: none;
 }
