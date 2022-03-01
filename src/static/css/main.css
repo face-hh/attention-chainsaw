@@ -30,17 +30,49 @@ body {
 }
 
 .ok {
-    text-align: center;
+    position: absolute;
+    left: 540px;
+}
+
+#items {
+    display: inline-block;
+    position: relative;
+    left: 440px;
+    bottom: 240px;
+    float: left;
+    clear: left;
+    width: 120px;
 }
 
 input[type=text] {
-    box-shadow: 0px 0px 15px #09ff00;
+    box-shadow: 0px 0px 15px #F01D7F;
     width: 400px;
+    height: 30px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid rgb(197, 197, 197);
     box-sizing: border-box;
+}
+
+label.label input[type="file"] {
+    position: absolute;
+    top: -1000px;
+}
+
+.label {
+    position: relative;
+    left: -5px;
+    box-shadow: 0px 0px 15px #F01D7F;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    color: #000000;
+    font-family: Arial;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin: 5px;
+    background: #ffffff;
+    display: inline-block;
 }
 
 input[type=submit] {
@@ -54,6 +86,8 @@ input[type=submit] {
 .input-values {
     font-family: 'Fredoka One', cursive;
     font-size: 20px;
+    position: relative;
+    left: 10px;
 }
 
 .ProductName {
@@ -72,7 +106,7 @@ input[type=submit] {
 }
 
 .select-selected {
-    box-shadow: 0px 0px 15px #09ff00;
+    box-shadow: 0px 0px 15px #F01D7F;
     background-color: #FFFFFF;
 }
 
@@ -113,6 +147,9 @@ input[type=submit] {
 
 #submit {
     border: none;
+    position: relative;
+
+    left: -56.5px;
     background-color: #FFFFFF;
     color: rgb(0, 0, 0);
     padding: 10px 22px;
