@@ -23,7 +23,7 @@
     <div class='container'>
         <div class='logo'><span>Submit</span></div>
     </div>
-    <div>
+    <div class='ok'>
         <span class='input-values'>License: </span>
         <div class='custom-select' stroke-width="1.5px">
             <select id='select'>
@@ -49,26 +49,21 @@
             </select>
             <script src='/src/static/js/selectHandler.js'></script>
         </div>
-        <br>
-        <br>
-        <span class='input-values'>Product name: <input id="ProductName" maxlength="70" type="text" required=""><span>
-                <br>
-                <br>
-                <button id="submit">Submit</button>
-                <script>
-                    const btn = document.getElementById("submit");
+        <br><br><br><span class='input-values'>Product name: <input id="ProductName" maxlength="70" type="text" required=""></span>
+        <br><br><br><button id="submit">Submit</button>
+        <script>
+            const btn = document.getElementById("submit");
 
-                    btn.onclick = () => {
-                        const pname = document.getElementById('ProductName').value;
-                        const select = document.getElementById('select').value;
+            btn.onclick = () => {
+                const pname = document.getElementById('ProductName').value;
+                const select = document.getElementById('select').value;
 
-                        console.log(select)
-                        if (!pname) return alert('No name chosen.')
-                        if (select === 0) return alert('No license chosen.')
+                if (!pname) return alert('No name chosen.')
+                if (select === '0') return alert('No license chosen.')
 
-                        alert('thanks!')
-                    }
-                </script>
+                alert('thanks!')
+            }
+        </script>
     </div>
 </body>
 

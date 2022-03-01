@@ -29,6 +29,10 @@ body {
     font-family: 'Fredoka One', cursive;
 }
 
+.ok {
+    text-align: center;
+}
+
 input[type=text] {
     box-shadow: 0px 0px 15px #09ff00;
     width: 400px;
