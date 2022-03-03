@@ -1,24 +1,23 @@
 {
-  "name": "marketplace",
+  "name": "attention-chainsaw",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "A console game",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CodeStacker-io/marketplace.git"
+    "url": "git+https://github.com/face-hh/attention-chainsaw.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CodeStacker-io/marketplace/issues"
+    "url": "https://github.com/face-hh/attention-chainsaw/issues"
   },
-  "homepage": "https://github.com/CodeStacker-io/marketplace#readme",
-  "dependencies": {
-    "express": "^4.17.3",
-    "path": "^0.12.7"
+  "homepage": "https://github.com/face-hh/attention-chainsaw#readme",
+  "devDependencies": {
+    "eslint": "^8.10.0"
   }
 }
